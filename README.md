@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <math.h>
-#include <string.h>
+#include <string.h> 
+
+
 /* ============================
    Function Declarations
    ============================ */
@@ -15,6 +17,7 @@ float factor();
 
 char expr[200];
 int pos = 0;
+
 /* ============================
    Function Definitions
    ============================ */
@@ -164,7 +167,7 @@ float expression() {
    Main Program
    ============================ */
 int main() {
-    printf("Scientific Calculator (No Trig) — simplified names\n");
+    printf("Scientific Calculator\n");
     printf("Enter Expression: ");
 
     if (!fgets(expr, sizeof(expr), stdin)) return 0;
