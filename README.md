@@ -57,9 +57,10 @@ int is_valid_expression() {
         char c = expr[i];
         if (isdigit((unsigned char)c)) hasDigit = 1;
 
-        if (c == '(') paren++;
-        if (c == ')') paren--;
-        if (paren < 0) return 0;
+      if (c == '(') paren++;
+    if (c == ')') paren--;
+    if (paren < 0) return 0;
+    
 
         if (strchr("+-*/^", c)) {
             if (i + 1 < len && strchr("+-*/^)", expr[i + 1])) return 0;
